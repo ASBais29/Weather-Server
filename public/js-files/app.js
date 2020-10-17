@@ -1,4 +1,4 @@
-console.log('Client side file is running')
+//console.log('Client side file is running')
 
 // fetch('http://localhost:3000/weather?address=!').then((response)=>{
 // response.json().then((data)=>{
