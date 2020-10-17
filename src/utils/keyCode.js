@@ -1,8 +1,7 @@
 const request=require('request')
 
 const keyCode=(latitude,longitude,name,callback)=>{
-    const url='http://dataservice.accuweather.com/locations/v1/cities/geoposition/search?apikey=m0ZB5GwQQXkE07du48MSGmJoiL93HRtG&q='+latitude+'%2C'+longitude
-     
+    const url='http://dataservice.accuweather.com/locations/v1/cities/geoposition/search?apikey=V2ulnTdGmp2kUASIJDIaAePSnGvRATaE&q='+latitude+'%2C'+longitude
 
     request({url: url,json:true}, (error,response)=>{
         if(error)
