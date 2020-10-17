@@ -27,7 +27,7 @@ weatherData.addEventListener('submit', (event)=>{
 
 fetch('/weather?address='+location).then((response)=>{
 response.json().then((data)=>{
-    if(data.error)
+    if( data.error )
     {
         msg3.textContent=data.error
     }
