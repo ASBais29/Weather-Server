@@ -2,6 +2,9 @@ const express =require('express')
 const path = require('path'); 
 const hbs=require('hbs')
 const app=express()
+
+const port=process.env.PORT||3000
+
 const geoCode=require('./utils/geoCode.js')
 const forecast=require('./utils/forecast.js')
 const keyCode=require('./utils/keyCode.js')
@@ -96,6 +99,6 @@ app.get('*',(request,response)=>{
     })
 })
 
-app.listen(3000,()=>{
+app.listen(port,()=>{
     console.log('Server is running good and fine...')
 })
